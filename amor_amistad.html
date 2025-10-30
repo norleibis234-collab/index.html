@@ -1,0 +1,56 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Amor & Amistad 💕</title>  
+    <style>  
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Quicksand:wght@300;400;600&display=swap');  
+        * { margin: 0; padding: 0; box-sizing: border-box; }  
+        body { font-family: 'Quicksand', sans-serif; background: linear-gradient(135deg, #ffeef8 0%, #ffe0f0 50%, #f8d7e8 100%); min-height: 100vh; overflow-x: hidden; }  
+        .floating-hearts { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }  
+        .heart { position: absolute; color: rgba(255, 182, 193, 0.6); font-size: 20px; animation: float 8s infinite linear; }  
+        @keyframes float { 0% { transform: translateY(100vh) rotate(0deg); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(-100px) rotate(360deg); opacity: 0; } }  
+        header { text-align: center; padding: 60px 20px; position: relative; z-index: 2; }  
+        .main-title { font-family: 'Dancing Script', cursive; font-size: 4rem; color: #d63384; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; animation: glow 3s ease-in-out infinite alternate; }  
+        @keyframes glow { from { text-shadow: 2px 2px 4px rgba(0,0,0,0.1), 0 0 20px rgba(214, 51, 132, 0.3); } to { text-shadow: 2px 2px 4px rgba(0,0,0,0.1), 0 0 30px rgba(214, 51, 132, 0.5); } }  
+        .subtitle { font-size: 1.5rem; color: #8e44ad; font-weight: 300; }  
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }  
+        .messages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; padding: 40px 0; }  
+        .message-card { background: rgba(255, 255, 255, 0.9); border-radius: 25px; padding: 30px; box-shadow: 0 15px 35px rgba(214, 51, 132, 0.1); border: 2px solid rgba(255, 182, 193, 0.3); transition: all 0.4s ease; position: relative; overflow: hidden; }  
+        .message-card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 25px 50px rgba(214, 51, 132, 0.2); border-color: #ff6b9d; }  
+        .card-icon { font-size: 3rem; margin-bottom: 20px; display: block; text-align: center; animation: bounce 2s infinite; }  
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 60% { transform: translateY(-5px); } }  
+        .message-title { font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #d63384; margin-bottom: 15px; text-align: center; font-weight: 600; }  
+        .message-text { font-size: 1rem; line-height: 1.6; color: #555; text-align: center; font-weight: 400; }  
+        footer { text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #d63384, #8e44ad); color: white; margin-top: 60px; }  
+        .footer-hearts { font-size: 2rem; margin-bottom: 15px; animation: pulse 2s infinite; }  
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }  
+    </style>
+</head>  
+<body>  
+    <div class="floating-hearts"></div>  
+    <header>  
+        <h1 class="main-title">Amor & Amistad</h1>  
+        <p class="subtitle">Mensajes llenos de cariño y dulzura 💕</p>  
+    </header>  
+    <div class="container">  
+        <div class="messages-grid">  
+            <div class="message-card"><span class="card-icon">💖</span><h3 class="message-title">El Amor Verdadero</h3><p class="message-text">El amor no se trata de encontrar a alguien con quien puedas vivir, sino de encontrar a alguien sin quien no puedas vivir.</p></div>  
+        </div>  
+        <div class="quote-section">  
+            <p class="quote-text">"El amor y la amistad son los regalos más preciosos que podemos dar y recibir"</p>  
+            <p class="quote-author">- Con amor, para ti 💝</p>  
+        </div>  
+    </div>  
+    <footer>  
+        <div class="footer-hearts">💕 💖 💕</div>  
+        <p>Creado con mucho amor y cariño</p>  
+        <p>Para las personas más especiales de tu vida ✨</p>  
+        <div style="margin-top: 25px; font-size: 1rem; line-height: 1.6;">  
+            <p>📧 <strong>Contacto:</strong> <a href="mailto:montoyanorle53@gmail.com" style="color: #ffe6f2; text-decoration: underline;">montoyanorle53@gmail.com</a></p>  
+            <p>📱 <strong>Teléfono:</strong> <a href="https://wa.me/573115695365" target="_blank" style="color: #ffe6f2; text-decoration: underline;">+57 311 5695365</a></p>  
+        </div>  
+    </footer>  
+</body>  
+</html>
